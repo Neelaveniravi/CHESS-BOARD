@@ -1,0 +1,44 @@
+.chessboard {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
+
+}
+
+h1 {
+  text-align: center;
+  padding: 2px;
+}
+
+#box1 {
+  font-size: 60px;
+  align-items: center;
+}
+
+#box2 {
+  font-size: 60px;
+}
+
+.box1:nth-child(odd) {
+  background-color: gray;
+}
+
+.box1:nth-child(even) {
+  background-color: white;
+
+}
+
+.box2:nth-child(even) {
+  background-color: gray;
+}
+
+.box2:nth-child(odd) {
+  background-color: white;
+}
+
+.chessboard>div {
+  border: 1px solid black;
+
+}
